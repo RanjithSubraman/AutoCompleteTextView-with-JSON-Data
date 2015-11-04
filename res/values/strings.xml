@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GoEuroTest</string>
+    <string name="start_hint">&#160;From: City or Town</string>
+    <string name="end_hint">&#160;To: City or Town</string>
+    <string name="datesample">&#160;10/29/2014</string>
+    <string name="heading">GoEuro</string>
+    <string name="selectdate">Select Date</string>
+
+</resources>

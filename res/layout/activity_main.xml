@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <AutoCompleteTextView
+        android:id="@+id/end_destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start_destination"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/transition"
+        android:ems="12"
+        android:hint="@string/end_hint" >
+    </AutoCompleteTextView>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_toRightOf="@+id/editText1"
+        android:contentDescription="@string/selectdate"
+        android:cropToPadding="true"
+        android:onClick="selectDate"
+        android:src="@drawable/ic_datepicker" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/end_destination"
+        android:layout_below="@+id/end_destination"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/transition"
+        android:ems="10"
+        android:hint="@string/datesample"
+        android:inputType="date" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/goeuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/start_destination"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/heading"
+        android:textSize="50dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/start_destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/goeuro"
+        android:layout_marginTop="37dp"
+        android:layout_toLeftOf="@+id/imageButton1"
+        android:background="@drawable/transition"
+        android:ems="10"
+        android:hint="@string/start_hint" />
+
+    <ImageView
+        android:id="@+id/searchbutton"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_margin="5dp"
+        android:layout_marginTop="40dp"
+        android:baselineAlignBottom="true"
+        android:fitsSystemWindows="false"
+        android:scaleType="centerInside"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:src="@drawable/searchimage" />
+
+</RelativeLayout>
